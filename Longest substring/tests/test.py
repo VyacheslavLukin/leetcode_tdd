@@ -14,6 +14,10 @@ def test_should_return_substring_at_string_start():
     st = "aaabb"
     assert s.lengthOfLongestSubstring(st) == 3 
 
-def test_should_return_substring_at_end_start():
+def test_should_return_substring_at_end():
     st = "aaabbbb"
     assert s.lengthOfLongestSubstring(st) == 4
+
+def test_should_return_substring_at_middle():
+    st = "aaazzzzzzzzbbbb"
+    assert s.lengthOfLongestSubstring(st) == 8
