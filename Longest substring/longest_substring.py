@@ -15,7 +15,7 @@ class Solution:
     def get_substring(self) -> str:
         return self.substring
 
-    def find_substring(self) -> bool:
+    def find_substring(self) -> str:
         def cmp_counter_in_tuple(tup: tuple) -> int:
             return tup[1]
 
