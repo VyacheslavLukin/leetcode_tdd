@@ -1,7 +1,14 @@
 class Solution:
 
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        if not s:
+    def lengthOfLongestSubstring(self, input_string: str) -> int:
+        if not input_string:
             return 0
-        else:
-            return len(s)
+
+        first_letter = input_string[0]
+        dict_text = {}
+        for letter in input_string:
+            if letter in dict_text.keys():
+                dict_text[letter] += 1
+            else:
+                dict_text[letter] = 1
+        return dict_text[first_letter]

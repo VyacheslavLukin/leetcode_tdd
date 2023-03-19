@@ -9,3 +9,7 @@ def test_should_return_zero_for_empty_string():
 @given(st.text(min_size=5, max_size=5))
 def test_should_return_len_of_string(txt):
     assert len(txt) == 5
+
+def test_should_return_substring_at_string_start():
+    st = "aaabb"
+    assert s.lengthOfLongestSubstring(st) == 3 
