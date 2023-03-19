@@ -11,4 +11,5 @@ class Solution:
                 dict_text[letter] += 1
             else:
                 dict_text[letter] = 1
-        return dict_text[first_letter]
+        
+        return max(dict_text.values())
