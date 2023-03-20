@@ -28,3 +28,7 @@ def test_should_return_empty_substring():
 def test_should_return_substring_at_beginning():
     s = Solution(start_st)
     assert s.get_substring() == "aaa"
+
+def test_should_return_nonrepeating_substring_at_beginning():
+    s = Solution("abca")
+    assert s.get_substring() == "abc"
